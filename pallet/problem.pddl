@@ -1,0 +1,6 @@
+(define (problem pallet-p1)
+	(:domain pallet)
+	(:objects plt-a plt-b plt-c plt-d)
+	(:init (on-floor plt-c) (on-floor plt-d) (on-floor plt-a) (on-floor plt-b) (clear-robot) (clear-pallet))
+	(:goal (and (out-of-room plt-c) (out-of-room plt-d) (out-of-room plt-a) (out-of-room plt-b)))
+)

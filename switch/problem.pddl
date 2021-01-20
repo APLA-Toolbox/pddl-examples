@@ -1,0 +1,6 @@
+(define (problem SWITCH A-B-C)
+    (:domain SWITCH)
+    (:objects A B C)
+    (:init (left A) (leftOf A B) (leftOf B C) (right C))
+    (:goal (and (leftOf C B) (leftOf B A)))
+)
